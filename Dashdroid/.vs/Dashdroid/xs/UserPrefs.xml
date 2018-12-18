@@ -1,22 +1,19 @@
-﻿<Properties StartupConfiguration="{D7601BFF-A6F3-4FCF-A034-305FE0FEEAA7}|Default">
+﻿<Properties StartupConfiguration="{A12E8ECD-EE3D-4C8A-8020-BDB973F302FD}|Default">
   <MonoDevelop.Ide.ItemProperties.Dashdroid.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BB50A4D9-8FBA-442D-9C72-E21DF599B1D6" />
   <MonoDevelop.Ide.ItemProperties.Dashdroid.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Nexus_5X_API_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dashdroid.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dashdroid/Sensors.xaml">
     <Files>
       <File FileName="Dashdroid/MainPage.xaml.cs" Line="18" Column="1" />
-      <File FileName="Dashdroid/MainPage.xaml" Line="13" Column="14" />
+      <File FileName="Dashdroid/MainPage.xaml" Line="10" Column="24" />
       <File FileName="Dashdroid/App.xaml" Line="5" Column="15" />
       <File FileName="Dashdroid/MainPage.cs" Line="17" Column="14" />
-      <File FileName="Dashdroid/Sensors.xaml.cs" Line="15" Column="9" />
       <File FileName="Dashdroid/Camera.xaml.cs" Line="1" Column="1" />
-      <File FileName="Dashdroid/Sensors.xaml" Line="20" Column="5" />
+      <File FileName="Dashdroid/Sensors.xaml" Line="71" Column="53" />
+      <File FileName="Dashdroid/Sensors.xaml.cs" Line="101" Column="49" />
+      <File FileName="Dashdroid/SensorDef.cs" Line="9" Column="25" />
       <File FileName="Dashdroid/Camera.xaml" Line="12" Column="15" />
-      <File FileName="Dashdroid.Android/MainActivity.cs" Line="22" Column="26" />
-      <File FileName="../../.nuget/packages/xamarin.essentials/1.0.0/readme.txt" Line="15" Column="83" />
-      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/iOS/Xamarin.iOS.Common.targets" Line="657" Column="31" />
       <File FileName="Dashdroid.iOS/Info.plist" />
-      <File FileName="Dashdroid/SensorDef.cs" Line="9" Column="35" />
-      <File FileName="Dashdroid.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Dashdroid/App.xaml.cs" Line="24" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

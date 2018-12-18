@@ -34,5 +34,7 @@
 	<string>Dashdroid</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs access location when open.</string>
 </dict>
 </plist>

@@ -4,18 +4,82 @@
              x:Class="Dashdroid.Sensors" 
              Title="Sensors" 
              Icon="baseline_home_black_18dp.png">
-    <!--<ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+   <ContentPage.Content>
+        <!--<StackLayout VerticalOptions="Start" HorizontalOptions="Center">
             <Switch x:Name="ToggleAccelerometer" Toggled="ToggleAccelerometer_OnToggled"/>
-            <Label Text="Welcome to Tabbed Page" x:Name="Accelerometer_value" />
+            <Label Text="Accelerometer Value On/Off"  />
         </StackLayout>
-    </ContentPage.Content>-->
-    <ListView x:Name="SersorView">
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <TextCell Text="{Binding DisplayValue}" />
-      </DataTemplate>
-    </ListView.ItemTemplate>
-  </ListView>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Center">     
+            <Label Text="/" x:Name="Accelerometer_value" />
+        </StackLayout>-->
+       <ScrollView> 
+          <FlexLayout Direction="Column"
+                 AlignItems="Center"
+                    JustifyContent="SpaceEvenly">
+
+         <Label Text="Accelerometer Value Off/On"
+                  FontSize="24" TextColor="#0b6623" />
+
+            <Switch x:Name="ToggleAccelerometer" Toggled="ToggleAccelerometer_OnToggled" OnColor="#0b6623"/>
+
+       
+
+         <Label Text="/" x:Name="Accelerometer_value" />
+            
+               <BoxView Color="Green"
+             HeightRequest="2"
+                        WidthRequest="500"
+              />
+                
+                
+                <Label Text="Battery level"
+                 FontSize="24" TextColor="#0b6623" />    
+
+            <Label Text="/" x:Name="Battery_value" />
+                
+                 <BoxView Color="Green"
+             HeightRequest="2"
+                           WidthRequest="500"
+              />
+                
+                <Label Text="Position"
+                 FontSize="24" TextColor="#0b6623" />    
+
+            <Label Text="/" x:Name="GPS_value" />
+                
+                     <BoxView Color="Green"
+             HeightRequest="2"
+                              WidthRequest="500"
+              />
+                
+                <Label Text="Gyroscope Value Off/On"
+                  FontSize="24" TextColor="#0b6623" />
+
+            <Switch x:Name="ToggleGyroscope" Toggled="ToggleGyroscope_OnToggled" OnColor="#0b6623"/>
+
+       
+
+         <Label Text="/" x:Name="Gyroscope_value" />
+                
+                
+                <BoxView Color="Green"
+             HeightRequest="2"
+                              WidthRequest="500"
+              />
+                
+                   <Label Text="Magnetometer Value Off/On"
+                  FontSize="24" TextColor="#0b6623" />
+
+            <Switch x:Name="ToggleMagnetometer" Toggled="ToggleMagnetometer_OnToggled" OnColor="#0b6623"/>
+
+       
+
+         <Label Text="/" x:Name="Magnetometer_value" />
+                
+         </FlexLayout>
+        
+        </ScrollView>
+    </ContentPage.Content>
     
+  
 </ContentPage>
