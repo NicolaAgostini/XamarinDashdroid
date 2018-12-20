@@ -17,7 +17,7 @@
                  AlignItems="Center"
                     JustifyContent="SpaceEvenly">
 
-         <Label Text="Accelerometer Value Off/On"
+         <Label Text="Accelerometer Value Off/On" Margin="0, 20, 0, 0"
                   FontSize="24" TextColor="#0b6623" />
 
             <Switch x:Name="ToggleAccelerometer" Toggled="ToggleAccelerometer_OnToggled" OnColor="#0b6623"/>
@@ -32,15 +32,7 @@
               />
                 
                 
-                <Label Text="Battery level"
-                 FontSize="24" TextColor="#0b6623" />    
-
-            <Label Text="/" x:Name="Battery_value" />
-                
-                 <BoxView Color="Green"
-             HeightRequest="2"
-                           WidthRequest="500"
-              />
+             
                 
                 <Label Text="Position"
                  FontSize="24" TextColor="#0b6623" />    
@@ -75,6 +67,18 @@
        
 
          <Label Text="/" x:Name="Magnetometer_value" />
+                
+                   <BoxView Color="Green"
+             HeightRequest="2"
+                           WidthRequest="500"
+              />
+                
+                 <Label Text="Battery level"
+                        Margin="20, 0, 20, 0"
+                 FontSize="24" TextColor="#0b6623" />    
+
+            <Label Text="/" x:Name="Battery_value" />
+                
                 
          </FlexLayout>
         

@@ -4,9 +4,21 @@
              x:Class="Dashdroid.Camera" 
              Title="Camera" 
              Icon="camera.png">
-    <ContentPage.Content>
+    <!--<ContentPage.Content>
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             <Label Text="Camera" />
         </StackLayout>
-    </ContentPage.Content>
+    </ContentPage.Content>-->
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image x:Name="PhotoImage" />
+        <Button x:Name="CameraButton" Text="Take Photo" Grid.Row="1" Margin="5, 0, 5, 20" BackgroundColor="#0b6623" TextColor="White" />
+    </Grid>
+
+    
 </ContentPage>

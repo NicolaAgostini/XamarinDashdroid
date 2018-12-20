@@ -35,7 +35,8 @@ namespace Dashdroid
 
             Battery_value.Text = "Battery level: " + level*100 + 
             " Battery Power Source: " + source;
-            RetrievePosition();
+           
+                RetrievePosition();
 
             Gyroscope.ReadingChanged += Gyroscope_ReadingChanged; //Registrazione evento giroscopio
 
@@ -77,10 +78,12 @@ namespace Dashdroid
         void Battery_BatteryChanged(object sender, BatteryInfoChangedEventArgs e)  //gestisco l'evento della batteria
         {
             var level = e.ChargeLevel;
+            level = Convert.ToInt32(level*100);
+            Console.WriteLine("Ecco level:"+level);
             var state = e.State;
             var source = e.PowerSource;
             //Console.WriteLine($"Reading: Level: {level}, State: {state}, Source: {source}");
-            Battery_value.Text = "Battery level: "+ level*100+ " Battery Power Source: " + source;
+            Battery_value.Text = "Battery level: "+ level +Environment.NewLine + "Battery Power Source: " + source;
 
         }
 
@@ -119,12 +122,14 @@ namespace Dashdroid
         }
         catch (FeatureNotSupportedException fnsEx)
         {
-            // Feature not supported on device
-        }
+                DisplayAlert("Alert", "Accelerometer not supported", "OK");
+                Console.WriteLine("Error!"+fnsEx);
+            }
         catch (Exception ex)
         {
-            // Other error has occurred.
-        }
+                DisplayAlert("Alert", "An error has occurred using accelerator", "OK");
+                Console.WriteLine("Error!" + ex);
+            }
     }
 
         public void ToggleGyroscope_OnToggled(object sender, ToggledEventArgs e)
@@ -138,11 +143,13 @@ namespace Dashdroid
             }
             catch (FeatureNotSupportedException fnsEx)
             {
-                // Feature not supported on device
+                DisplayAlert("Alert", "Gyroscope not supported", "OK");
+                Console.WriteLine("Error!" + fnsEx);
             }
             catch (Exception ex)
             {
-                // Other error has occurred.
+                DisplayAlert("Alert", "An error has occurred using gyroscope", "OK");
+                Console.WriteLine("Error!" + ex);
             }
         }
 
@@ -157,15 +164,14 @@ namespace Dashdroid
             }
             catch (FeatureNotSupportedException fnsEx)
             {
-                // Feature not supported on device
+                DisplayAlert("Alert", "Magnetometer not supported", "OK");
+                Console.WriteLine("Error!" + fnsEx);
             }
             catch (Exception ex)
             {
-                // Other error has occurred.
+                DisplayAlert("Alert", "An error has occurred using magnetometer", "OK");
+                Console.WriteLine("Error!" + ex);
             }
         }
-
-
-
     }
 }
