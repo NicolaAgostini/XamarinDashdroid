@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using Xamarin.Essentials;
 using System.Collections.ObjectModel;
-
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 
 using Xamarin.Forms;
 
@@ -35,8 +36,8 @@ namespace Dashdroid
 
             Battery_value.Text = "Battery level: " + level*100 + 
             " Battery Power Source: " + source;
-           
-                RetrievePosition();
+
+            RetrievePosition();
 
             Gyroscope.ReadingChanged += Gyroscope_ReadingChanged; //Registrazione evento giroscopio
 
@@ -48,16 +49,23 @@ namespace Dashdroid
 
        async void RetrievePosition()
         {
-            var request = new GeolocationRequest(GeolocationAccuracy.Medium);
-            var location = await Geolocation.GetLocationAsync(request);
 
-            if (location != null)
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
+            if (status == PermissionStatus.Granted)
             {
-                //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
-                GPS_value.Text = "Latitude: "+ location.Latitude +Environment.NewLine
-                + "Longitude: "+location.Longitude + Environment.NewLine
-                     + " Altitude: "+location.Altitude;
+                var request = new GeolocationRequest(GeolocationAccuracy.Medium);
+                var location = await Geolocation.GetLocationAsync(request);
+
+                if (location != null)
+                {
+                    //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+                    GPS_value.Text = "Latitude: " + location.Latitude + Environment.NewLine
+                    + "Longitude: " + location.Longitude + Environment.NewLine
+                         + " Altitude: " + location.Altitude;
+                }
             }
+
+           
         }
 
         void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e) //gestisco l'evento accelerometro
@@ -79,7 +87,7 @@ namespace Dashdroid
         {
             var level = e.ChargeLevel;
             level = Convert.ToInt32(level*100);
-            Console.WriteLine("Ecco level:"+level);
+            // Console.WriteLine("Ecco level:"+level);
             var state = e.State;
             var source = e.PowerSource;
             //Console.WriteLine($"Reading: Level: {level}, State: {state}, Source: {source}");
