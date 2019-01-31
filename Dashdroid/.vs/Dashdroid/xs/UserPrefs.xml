@@ -1,33 +1,24 @@
 ﻿<Properties StartupConfiguration="{A12E8ECD-EE3D-4C8A-8020-BDB973F302FD}|Default">
   <MonoDevelop.Ide.ItemProperties.Dashdroid.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9EC65114-1530-4652-B2BE-56B6FF13D96A" />
   <MonoDevelop.Ide.ItemProperties.Dashdroid.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dashdroid/Dashdroid.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dashdroid/Camera.xaml.cs">
     <Files>
-      <File FileName="Dashdroid/MainPage.xaml.cs" Line="18" Column="1" />
-      <File FileName="Dashdroid/MainPage.xaml" Line="10" Column="24" />
-      <File FileName="Dashdroid/App.xaml" Line="5" Column="15" />
-      <File FileName="Dashdroid/MainPage.cs" Line="17" Column="14" />
-      <File FileName="Dashdroid/Camera.xaml.cs" Line="18" Column="10" />
-      <File FileName="Dashdroid/Sensors.xaml.cs" Line="7" Column="1" />
-      <File FileName="Dashdroid/SensorDef.cs" Line="9" Column="25" />
-      <File FileName="Dashdroid/Camera.xaml" Line="20" Column="82" />
-      <File FileName="Dashdroid.iOS/Info.plist" />
-      <File FileName="Dashdroid/App.xaml.cs" Line="24" Column="43" />
-      <File FileName="Dashdroid.Android/Properties/AndroidManifest.xml" Line="17" Column="12" />
-      <File FileName="Dashdroid.Android/Properties/AssemblyInfo.cs" Line="13" Column="49" />
-      <File FileName="Dashdroid.Android/MainActivity.cs" Line="7" Column="22" />
+      <File FileName="Dashdroid.Android/Resources/xml/file_paths.xml" Line="4" Column="117" />
+      <File FileName="Dashdroid.Android/Properties/AndroidManifest.xml" Line="1" Column="1" />
       <File FileName="Dashdroid.Android/Resources/AboutResources.txt" Line="1" Column="1" />
-      <File FileName="Dashdroid.Android/Resources/xml/file_paths.xml" Line="7" Column="1" />
-      <File FileName="Dashdroid.iOS/Main.cs" Line="21" Column="1" />
-      <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/5.16.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="2111" Column="36" />
-      <File FileName="../../.nuget/packages/plugin.permissions/3.0.0.12/readme.txt" Line="1" Column="1" />
-      <File FileName="Dashdroid.Android/Resources/mipmap-anydpi-v26/icon.xml" Line="4" Column="50" />
-      <File FileName="Dashdroid/Sensors.xaml" Line="89" Column="15" />
-      <File FileName="Dashdroid/Dashdroid.csproj" Line="1" Column="1" />
+      <File FileName="Dashdroid.Android/Resources/Resource.designer.cs" Line="1" Column="1" />
+      <File FileName="Dashdroid.Android/Properties/AssemblyInfo.cs" Line="32" Column="67" />
+      <File FileName="Dashdroid.Android/MainActivity.cs" Line="11" Column="1" />
+      <File FileName="Dashdroid/Camera.xaml.cs" Line="16" Column="10" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1327" Column="2" />
+      <File FileName="Dashdroid/MainPage.xaml" Line="13" Column="14" />
+      <File FileName="Dashdroid/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Dashdroid/SensorDef.cs" Line="1" Column="1" />
+      <File FileName="Dashdroid/Sensors.xaml.cs" Line="49" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

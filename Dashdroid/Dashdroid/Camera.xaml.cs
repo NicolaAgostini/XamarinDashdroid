@@ -16,7 +16,7 @@ namespace Dashdroid
         }
         private async void CameraButton_Clicked(object sender, EventArgs e)
         {
-            var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Camera);
             if (status == PermissionStatus.Granted)
             {
                 var photo = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
